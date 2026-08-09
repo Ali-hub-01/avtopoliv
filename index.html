@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Автополив.kz - автоматический полив под ключ и рулонный газон в Алматы</title>
+<meta name="description" content="Установка систем автоматического полива под ключ и укладка рулонного газона в Алматы. 10+ лет опыта, оборудование Hunter, Rain Bird, Gardena, K-Rain. Бесплатный выезд и замер участка.">
+<meta name="theme-color" content="#0E6BA8">
+<link rel="canonical" href="https://ali-hub-01.github.io/avtopoliv/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Автополив.kz">
+<meta property="og:title" content="Автополив.kz - автоматический полив под ключ и рулонный газон в Алматы">
+<meta property="og:description" content="Проектирование, монтаж и обслуживание систем автополива. Укладка рулонного газона под ключ. Бесплатный выезд и замер по Алматы и области.">
+<meta property="og:url" content="https://ali-hub-01.github.io/avtopoliv/">
+<meta property="og:image" content="https://ali-hub-01.github.io/avtopoliv/assets/og-image.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Автополив.kz - автополив под ключ и рулонный газон, Алматы">
+<meta name="twitter:description" content="Автоматический полив под ключ, модернизация, ремонт и рулонный газон. Бесплатный замер участка.">
+<meta name="twitter:image" content="https://ali-hub-01.github.io/avtopoliv/assets/og-image.jpg">
+
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="apple-touch-icon" href="assets/logo.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Автополив.kz",
+  "description": "Установка систем автоматического полива под ключ и укладка рулонного газона в Алматы.",
+  "image": "https://ali-hub-01.github.io/avtopoliv/assets/og-image.jpg",
+  "url": "https://ali-hub-01.github.io/avtopoliv/",
+  "telephone": "+77051588182",
+  "email": "towas@mail.ru",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ул. Зеина Шашкина 9А",
+    "addressLocality": "Алматы",
+    "addressCountry": "KZ"
+  },
+  "areaServed": "Алматы и Алматинская область",
+  "sameAs": ["https://instagram.com/polivalmaty.kz"]
+}
+</script>
+</head>
+<body>
+
+<!-- ===== ПРОГРЕСС ПОЛИВА (полоса прокрутки) ===== -->
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ===== ШАПКА ===== -->
+<header class="header" id="header">
+  <div class="container header__inner">
+    <a href="#top" class="header__logo" aria-label="Автополив.kz - на главную">
+      <img src="assets/logo.png" width="416" height="120" alt="Логотип Автополив.kz" decoding="async">
+    </a>
+
+    <nav class="nav" id="nav" aria-label="Основная навигация">
+      <a href="#uslugi" class="nav__link">Услуги</a>
+      <a href="#kak-rabotaem" class="nav__link">Как работаем</a>
+      <a href="#o-nas" class="nav__link">О нас</a>
+      <a href="#raboty" class="nav__link">Работы</a>
+      <a href="#kontakty" class="nav__link">Контакты</a>
+    </nav>
+
+    <div class="header__actions">
+      <a href="tel:+77051588182" class="header__phone">
+        <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg>
+        <span>+7 (705) 158 81 82</span>
+      </a>
+      <a href="#zayavka" class="btn btn--primary header__cta">Бесплатный замер</a>
+      <button class="burger" id="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ===== HERO ===== -->
+<section class="hero" id="hero">
+  <div class="hero__media">
+    <img src="assets/hero.jpg" width="1400" height="778" alt="Спринклер поливает свежий зелёный газон" fetchpriority="high" decoding="async">
+    <div class="hero__scrim"></div>
+  </div>
+
+  <!-- анимированные капли -->
+  <div class="drops" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <div class="container hero__content">
+    <span class="hero__badge reveal">Алматы и область · 10+ лет опыта</span>
+    <h1 class="hero__title reveal">Автоматический полив <span class="grad">под ключ</span> и рулонный газон</h1>
+    <p class="hero__sub reveal">Проектируем, монтируем и обслуживаем системы автополива на оборудовании Hunter, Rain Bird, Gardena и K-Rain. Ваш газон - ровный, зелёный и всегда напоённый.</p>
+    <div class="hero__cta reveal">
+      <a href="#zayavka" class="btn btn--primary btn--lg">Оставить заявку</a>
+      <a href="#uslugi" class="btn btn--ghost btn--lg">Наши услуги</a>
+    </div>
+    <ul class="hero__chips reveal" aria-label="Преимущества">
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.5 17-5-5 1.4-1.4L9.5 14l8.6-8.6L19.5 7z"/></svg> Бесплатный выезд и замер</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.5 17-5-5 1.4-1.4L9.5 14l8.6-8.6L19.5 7z"/></svg> Гарантия на работы</li>
+      <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.5 17-5-5 1.4-1.4L9.5 14l8.6-8.6L19.5 7z"/></svg> Сезонное обслуживание</li>
+    </ul>
+  </div>
+
+  <!-- волна-переход -->
+  <div class="wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 45c180-40 360-40 540 0s360 40 540 0 240-35 360-25v70H0z" fill="var(--bg)"/></svg>
+  </div>
+</section>
+
+<!-- ===== ЛЕНТА БРЕНДОВ / ДОВЕРИЕ ===== -->
+<section class="brands" aria-label="Оборудование ведущих брендов">
+  <div class="container">
+    <p class="brands__label reveal">Работаем на оборудовании мировых брендов</p>
+    <ul class="brands__list reveal">
+      <li>Hunter</li>
+      <li>Rain Bird</li>
+      <li>Gardena</li>
+      <li>K-Rain</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== УСЛУГИ ===== -->
+<section class="section uslugi" id="uslugi">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow">Что мы делаем</span>
+      <h2 class="section__title">Услуги под ключ</h2>
+      <p class="section__lead">Только услуги полива и газона - от проекта до запуска и обслуживания. Каждый этап ведут инженеры с опытом 10+ лет.</p>
+    </header>
+
+    <div class="cards">
+      <!-- 1 -->
+      <article class="card reveal" id="pod-klyuch">
+        <div class="card__media">
+          <img src="assets/services/pod-klyuch.jpg" width="820" height="545" alt="Благоустроенный участок с автоматическим поливом под ключ" loading="lazy" decoding="async">
+          <span class="card__num">01</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Автополив под ключ</h3>
+          <p class="card__text">Полный цикл: проектирование, скрытая разводка труб, установка спринклеров и автоматики по зонам, пусконаладка и запуск системы.</p>
+          <ul class="card__list">
+            <li>Проект и расчёт зон полива</li>
+            <li>Скрытый монтаж без вреда газону</li>
+            <li>Настройка автоматики и запуск</li>
+          </ul>
+          <a href="#zayavka" class="card__link">Рассчитать полив <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <!-- 2 -->
+      <article class="card reveal" id="modernizaciya">
+        <div class="card__media">
+          <img src="assets/services/modernizaciya.jpg" width="820" height="456" alt="Спринклер и умный контроллер полива" loading="lazy" decoding="async">
+          <span class="card__num">02</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Модернизация автополива</h3>
+          <p class="card__text">Делаем старую систему умной: wi-fi контроллеры, датчики дождя и влажности, добавление новых зон и апгрейд оборудования.</p>
+          <ul class="card__list">
+            <li>Умное управление со смартфона</li>
+            <li>Датчики дождя и влажности</li>
+            <li>Расширение и апгрейд зон</li>
+          </ul>
+          <a href="#zayavka" class="card__link">Обновить систему <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <!-- 3 -->
+      <article class="card reveal" id="remont">
+        <div class="card__media">
+          <img src="assets/services/remont.jpg" width="820" height="456" alt="Мастер обслуживает систему автополива на газоне" loading="lazy" decoding="async">
+          <span class="card__num">03</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Ремонт и обслуживание</h3>
+          <p class="card__text">Сезонный запуск весной и консервация осенью, поиск и устранение утечек и неполадок, замена форсунок и профилактика.</p>
+          <ul class="card__list">
+            <li>Весенний запуск и осенняя консервация</li>
+            <li>Поиск и устранение утечек</li>
+            <li>Замена форсунок и ремонт узлов</li>
+          </ul>
+          <a href="#zayavka" class="card__link">Заказать сервис <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+
+      <!-- 4 -->
+      <article class="card reveal" id="gazon">
+        <div class="card__media">
+          <img src="assets/services/gazon.jpg" width="820" height="546" alt="Укладка рулонного газона на подготовленное основание" loading="lazy" decoding="async">
+          <span class="card__num">04</span>
+        </div>
+        <div class="card__body">
+          <h3 class="card__title">Рулонный газон</h3>
+          <p class="card__text">Готовим основание и укладываем рулонный газон под ключ. Ровный, плотный и зелёный газон уже за один день.</p>
+          <ul class="card__list">
+            <li>Подготовка и выравнивание основания</li>
+            <li>Укладка рулонного газона</li>
+            <li>Зелёный результат за день</li>
+          </ul>
+          <a href="#zayavka" class="card__link">Заказать газон <span aria-hidden="true">→</span></a>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== КАК РАБОТАЕМ ===== -->
+<section class="section steps" id="kak-rabotaem">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow">Прозрачный процесс</span>
+      <h2 class="section__title">Как мы работаем</h2>
+      <p class="section__lead">Четыре понятных шага - от заявки до работающей системы, которой удобно пользоваться.</p>
+    </header>
+
+    <ol class="steps__grid">
+      <li class="step reveal">
+        <span class="step__num">1</span>
+        <div class="step__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></svg>
+        </div>
+        <h3 class="step__title">Заявка и выезд</h3>
+        <p class="step__text">Приедем на участок, замерим площадь и обсудим задачи. Выезд и замер - бесплатно.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">2</span>
+        <div class="step__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16v2H4zm0 5h10v2H4zm0 5h16v2H4zm0 5h10v2H4z"/></svg>
+        </div>
+        <h3 class="step__title">Проект и смета</h3>
+        <p class="step__text">Составим схему полива по зонам и прозрачный расчёт стоимости работ и материалов.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">3</span>
+        <div class="step__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="m21.7 6.3-1.4-1.4a1 1 0 0 0-1.4 0l-2 2 2.8 2.8 2-2a1 1 0 0 0 0-1.4M3 17.2V20h2.8l9-9L12 8.2z"/></svg>
+        </div>
+        <h3 class="step__title">Монтаж / укладка</h3>
+        <p class="step__text">Аккуратно монтируем систему или укладываем газон - в срок и без ущерба участку.</p>
+      </li>
+      <li class="step reveal">
+        <span class="step__num">4</span>
+        <div class="step__icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2m-1.2 14.3-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4z"/></svg>
+        </div>
+        <h3 class="step__title">Запуск и обучение</h3>
+        <p class="step__text">Настроим автоматику, проверим все зоны и покажем, как удобно пользоваться системой.</p>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== О НАС ===== -->
+<section class="section about" id="o-nas">
+  <div class="container about__grid">
+    <div class="about__media reveal">
+      <img src="assets/about.jpg" width="1000" height="556" alt="Мастер Автополив.kz за монтажом системы полива" loading="lazy" decoding="async">
+      <div class="about__badge">
+        <strong>10+</strong>
+        <span>лет на рынке полива</span>
+      </div>
+    </div>
+
+    <div class="about__body reveal">
+      <span class="eyebrow">О компании</span>
+      <h2 class="section__title">Инженеры полива, а не продавцы оборудования</h2>
+      <p>Автополив.kz - это команда проектировщиков и инженеров из Алматы. Более 10 лет мы устанавливаем системы автоматического полива под ключ и укладываем рулонный газон. Мы не торгуем железом - мы отвечаем за результат: работающую систему и живой газон.</p>
+
+      <div class="counters">
+        <div class="counter">
+          <span class="counter__num" data-count="10" data-suffix="+">0</span>
+          <span class="counter__label">лет опыта</span>
+        </div>
+        <div class="counter">
+          <span class="counter__num" data-count="4">0</span>
+          <span class="counter__label">бренда оборудования</span>
+        </div>
+        <div class="counter">
+          <span class="counter__num" data-count="5" data-suffix="+">0</span>
+          <span class="counter__label">кейсов с 2020 <em>*уточняется</em></span>
+        </div>
+      </div>
+
+      <ul class="about__list">
+        <li>Проектировщики и инженеры в штате</li>
+        <li>Оборудование Hunter, Rain Bird, Gardena, K-Rain</li>
+        <li>Бесплатный выезд, замер и гарантия на работы</li>
+      </ul>
+      <a href="#zayavka" class="btn btn--primary">Обсудить проект</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== РАБОТЫ / ГАЛЕРЕЯ ===== -->
+<section class="section works" id="raboty">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow">Портфолио</span>
+      <h2 class="section__title">Наши работы</h2>
+      <p class="section__lead">Системы полива и рулонный газон на участках в Алматы и области.</p>
+    </header>
+
+    <div class="gallery">
+      <button class="gallery__item reveal" data-src="assets/gallery/1.jpg" aria-label="Открыть фото работы 1">
+        <img src="assets/gallery/1.jpg" width="1100" height="611" alt="Работающая система автополива на участке" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery__item reveal" data-src="assets/gallery/2.jpg" aria-label="Открыть фото работы 2">
+        <img src="assets/gallery/2.jpg" width="1100" height="611" alt="Полив зелёного газона спринклерами" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery__item reveal" data-src="assets/gallery/3.jpg" aria-label="Открыть фото работы 3">
+        <img src="assets/gallery/3.jpg" width="1100" height="611" alt="Укладка рулонного газона на участке" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery__item reveal" data-src="assets/gallery/4.jpg" aria-label="Открыть фото работы 4">
+        <img src="assets/gallery/4.jpg" width="1100" height="611" alt="Ровный зелёный газон после укладки" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery__item reveal" data-src="assets/gallery/5.jpg" aria-label="Открыть фото работы 5">
+        <img src="assets/gallery/5.jpg" width="1100" height="611" alt="Монтаж системы автоматического полива" loading="lazy" decoding="async">
+      </button>
+      <button class="gallery__item reveal" data-src="assets/gallery/6.jpg" aria-label="Открыть фото работы 6">
+        <img src="assets/gallery/6.jpg" width="1100" height="611" alt="Благоустроенный участок с газоном и поливом" loading="lazy" decoding="async">
+      </button>
+    </div>
+  </div>
+</section>
+
+<!-- ===== CTA + ФОРМА ЗАЯВКИ ===== -->
+<section class="section lead" id="zayavka">
+  <div class="container lead__grid">
+    <div class="lead__info reveal">
+      <span class="eyebrow eyebrow--light">Бесплатный замер</span>
+      <h2 class="section__title">Оставьте заявку - приедем и замерим участок</h2>
+      <p class="lead__text">Заполните форму, и мы свяжемся с вами в WhatsApp. Подберём решение под ваш участок и рассчитаем стоимость. Это бесплатно и ни к чему не обязывает.</p>
+      <ul class="lead__list">
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.5 17-5-5 1.4-1.4L9.5 14l8.6-8.6L19.5 7z"/></svg> Ответим в течение рабочего дня</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.5 17-5-5 1.4-1.4L9.5 14l8.6-8.6L19.5 7z"/></svg> Выезд по Алматы и области</li>
+        <li><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m9.5 17-5-5 1.4-1.4L9.5 14l8.6-8.6L19.5 7z"/></svg> Без навязывания оборудования</li>
+      </ul>
+      <a href="https://wa.me/77051588182" class="btn btn--wa" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15l-1 3.7 3.8-1A10 10 0 1 0 12 2m0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.2.6.6-2.2-.2-.3A8 8 0 0 1 12 4m4.3 10.2c-.2-.1-1.3-.7-1.5-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.7c-.1-.2 0-.3.1-.5l.4-.4c.1-.1.1-.2.2-.4s0-.3 0-.4-.5-1.2-.7-1.7-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.5s1.7 2.6 4.1 3.6a4.6 4.6 0 0 0 2.8.5 2.3 2.3 0 0 0 1.5-1.1 1.9 1.9 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3"/></svg>
+        Написать в WhatsApp
+      </a>
+    </div>
+
+    <form class="form reveal" id="leadForm" novalidate>
+      <div class="form__field">
+        <label for="name">Ваше имя</label>
+        <input type="text" id="name" name="name" placeholder="Как к вам обращаться" required autocomplete="name">
+      </div>
+      <div class="form__field">
+        <label for="phone">Телефон</label>
+        <input type="tel" id="phone" name="phone" placeholder="+7 (___) ___ __ __" required autocomplete="tel">
+      </div>
+      <div class="form__field">
+        <label for="service">Услуга</label>
+        <select id="service" name="service" required>
+          <option value="" disabled selected>Выберите услугу</option>
+          <option value="Автополив под ключ">Автополив под ключ</option>
+          <option value="Модернизация автополива">Модернизация автополива</option>
+          <option value="Ремонт и обслуживание">Ремонт и обслуживание</option>
+          <option value="Рулонный газон">Рулонный газон</option>
+        </select>
+      </div>
+      <div class="form__field">
+        <label for="comment">Комментарий</label>
+        <textarea id="comment" name="comment" rows="3" placeholder="Площадь участка, пожелания, удобное время"></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--block btn--lg">Оставить заявку</button>
+      <p class="form__note">Нажимая кнопку, вы соглашаетесь на обработку данных. Отправим сообщение в WhatsApp.</p>
+      <p class="form__ok" id="formOk" role="status" hidden>Спасибо! Заявка принята - открываем WhatsApp для отправки.</p>
+    </form>
+  </div>
+</section>
+
+<!-- ===== КОНТАКТЫ ===== -->
+<section class="section contacts" id="kontakty">
+  <div class="container">
+    <header class="section__head reveal">
+      <span class="eyebrow">На связи</span>
+      <h2 class="section__title">Контакты</h2>
+      <p class="section__lead">Работаем по Алматы и Алматинской области. Звоните или пишите - подскажем по вашему участку.</p>
+    </header>
+
+    <div class="contacts__grid">
+      <a class="contact reveal" href="tel:+77051588182">
+        <span class="contact__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1z"/></svg></span>
+        <span class="contact__label">Телефон</span>
+        <span class="contact__value">+7 (705) 158 81 82</span>
+      </a>
+
+      <a class="contact reveal" href="https://wa.me/77051588182" target="_blank" rel="noopener">
+        <span class="contact__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15l-1 3.7 3.8-1A10 10 0 1 0 12 2m0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.2.6.6-2.2-.2-.3A8 8 0 0 1 12 4m4.3 10.2c-.2-.1-1.3-.7-1.5-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.7c-.1-.2 0-.3.1-.5l.4-.4c.1-.1.1-.2.2-.4s0-.3 0-.4-.5-1.2-.7-1.7-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.5s1.7 2.6 4.1 3.6a4.6 4.6 0 0 0 2.8.5 2.3 2.3 0 0 0 1.5-1.1 1.9 1.9 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3"/></svg></span>
+        <span class="contact__label">WhatsApp</span>
+        <span class="contact__value">+7 705 158 81 82</span>
+      </a>
+
+      <a class="contact reveal" href="mailto:towas@mail.ru">
+        <span class="contact__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2m0 4v10h16V8l-8 5z"/></svg></span>
+        <span class="contact__label">Email</span>
+        <span class="contact__value">towas@mail.ru</span>
+      </a>
+
+      <a class="contact reveal" href="https://instagram.com/polivalmaty.kz" target="_blank" rel="noopener">
+        <span class="contact__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 8.5a3.5 3.5 0 1 0 0 7 3.5 3.5 0 0 0 0-7m0 5.8a2.3 2.3 0 1 1 0-4.6 2.3 2.3 0 0 1 0 4.6M16 2H8a6 6 0 0 0-6 6v8a6 6 0 0 0 6 6h8a6 6 0 0 0 6-6V8a6 6 0 0 0-6-6m4 14a4 4 0 0 1-4 4H8a4 4 0 0 1-4-4V8a4 4 0 0 1 4-4h8a4 4 0 0 1 4 4zm-3.6-8.9a.9.9 0 1 0 0 1.8.9.9 0 0 0 0-1.8"/></svg></span>
+        <span class="contact__label">Instagram</span>
+        <span class="contact__value">@polivalmaty.kz</span>
+      </a>
+
+      <div class="contact contact--wide reveal">
+        <span class="contact__ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5"/></svg></span>
+        <span class="contact__label">Адрес</span>
+        <span class="contact__value">г. Алматы, ул. Зеина Шашкина 9А</span>
+        <span class="contact__hint">Работаем по Алматы и области</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===== ФУТЕР ===== -->
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo.png" width="416" height="120" alt="Автополив.kz" loading="lazy" decoding="async">
+      <p>Автоматический полив под ключ и рулонный газон в Алматы. 10+ лет опыта.</p>
+    </div>
+    <nav class="footer__nav" aria-label="Навигация в подвале">
+      <a href="#pod-klyuch">Автополив под ключ</a>
+      <a href="#modernizaciya">Модернизация</a>
+      <a href="#remont">Ремонт и обслуживание</a>
+      <a href="#gazon">Рулонный газон</a>
+    </nav>
+    <div class="footer__contact">
+      <a href="tel:+77051588182">+7 (705) 158 81 82</a>
+      <a href="mailto:towas@mail.ru">towas@mail.ru</a>
+      <a href="https://instagram.com/polivalmaty.kz" target="_blank" rel="noopener">@polivalmaty.kz</a>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <span>© <span id="year">2026</span> Автополив.kz · Алматы</span>
+      <a href="#top" class="footer__top">Наверх ↑</a>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== ПЛАВАЮЩАЯ КНОПКА WHATSAPP ===== -->
+<a href="https://wa.me/77051588182" class="fab" target="_blank" rel="noopener" aria-label="Написать в WhatsApp">
+  <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 0 0-8.6 15l-1 3.7 3.8-1A10 10 0 1 0 12 2m0 2a8 8 0 1 1-4.2 14.8l-.3-.2-2.2.6.6-2.2-.2-.3A8 8 0 0 1 12 4m4.3 10.2c-.2-.1-1.3-.7-1.5-.8s-.4-.1-.5.1-.6.8-.7.9-.3.2-.5.1a6.5 6.5 0 0 1-1.9-1.2 7.2 7.2 0 0 1-1.3-1.7c-.1-.2 0-.3.1-.5l.4-.4c.1-.1.1-.2.2-.4s0-.3 0-.4-.5-1.2-.7-1.7-.4-.4-.5-.4h-.5a.9.9 0 0 0-.6.3 2.7 2.7 0 0 0-.9 2c0 1.2.9 2.4 1 2.5s1.7 2.6 4.1 3.6a4.6 4.6 0 0 0 2.8.5 2.3 2.3 0 0 0 1.5-1.1 1.9 1.9 0 0 0 .1-1.1c0-.1-.2-.2-.4-.3"/></svg>
+</a>
+
+<!-- ===== ЛАЙТБОКС ===== -->
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Закрыть">×</button>
+  <img src="" alt="Просмотр работы" id="lightboxImg">
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
