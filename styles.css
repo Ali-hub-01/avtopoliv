@@ -101,7 +101,7 @@ h1,h2,h3{ margin:0; line-height:1.15; letter-spacing:-.02em; }
 }
 .header.is-stuck{ box-shadow:0 8px 30px -18px rgba(20,60,40,.5); border-color:var(--line); }
 .header__inner{ display:flex; align-items:center; gap:16px; height:70px; }
-.header__logo img{ height:38px; width:auto; }
+.header__logo img{ height:54px; width:auto; }
 
 .nav{ display:none; gap:26px; margin-left:auto; }
 .nav__link{
@@ -166,7 +166,8 @@ h1,h2,h3{ margin:0; line-height:1.15; letter-spacing:-.02em; }
   text-shadow:0 4px 30px rgba(0,0,0,.3);
 }
 .hero__title .grad{ background:linear-gradient(100deg,#8be9ff,#7dffa6); -webkit-background-clip:text; background-clip:text; }
-.hero__sub{ color:#e9f5ee; font-size:clamp(1rem,3.4vw,1.22rem); margin:18px 0 0; max-width:600px; }
+.hero__sub{ color:#e9f5ee; font-size:clamp(1rem,3.4vw,1.22rem); margin:18px 0 0; max-width:640px; }
+.hero__sub--sm{ font-size:clamp(.92rem,2.6vw,1.04rem); color:#d3ece0; margin-top:12px; }
 .hero__cta{ display:flex; flex-wrap:wrap; gap:14px; margin-top:30px; }
 .hero__chips{ display:flex; flex-wrap:wrap; gap:10px 20px; margin-top:30px; }
 .hero__chips li{ display:flex; align-items:center; gap:8px; color:#eafff2; font-weight:600; font-size:.92rem; }
@@ -384,7 +385,7 @@ a.contact:hover{ transform:translateY(-4px); box-shadow:var(--shadow-lg); }
 /* ---------- Футер ---------- */
 .footer{ background:#0c2419; color:#c9dcd1; }
 .footer__inner{ display:grid; grid-template-columns:1fr; gap:26px; padding-block:44px; }
-.footer__brand img{ height:40px; width:auto; background:#fff; padding:8px 12px; border-radius:12px; }
+.footer__brand img{ height:58px; width:auto; background:#fff; padding:10px 14px; border-radius:14px; }
 .footer__brand p{ margin:14px 0 0; font-size:.92rem; color:#9fb6aa; max-width:340px; }
 .footer__nav{ display:grid; gap:10px; }
 .footer__nav a,.footer__contact a{ color:#c9dcd1; font-weight:600; transition:color .2s; }
