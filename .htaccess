@@ -1,0 +1,4 @@
+# HTTP → HTTPS (301). Нужно, если панель Hoster не даёт включить ssl-redirect.
+RewriteEngine On
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
